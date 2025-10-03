@@ -2,7 +2,8 @@
   "permissions": {
     "allow": [
       "mcp__shadcn__search_items_in_registries",
-      "Bash(npm install:*)"
+      "Bash(npm install:*)",
+      "mcp__vercel__get_project"
     ],
     "deny": [],
     "ask": []
