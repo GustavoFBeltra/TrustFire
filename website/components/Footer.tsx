@@ -114,9 +114,9 @@ export function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/download" className="text-gray-400 hover:text-primary text-sm transition-colors flex items-center gap-2 group">
+                <Link href="/about" className="text-gray-400 hover:text-primary text-sm transition-colors flex items-center gap-2 group">
                   <span className="w-1 h-1 bg-gray-600 rounded-full group-hover:bg-primary transition-colors"></span>
-                  Download
+                  Get Started
                 </Link>
               </li>
             </ul>

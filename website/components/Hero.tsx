@@ -66,10 +66,10 @@ export function Hero() {
             className="flex flex-col sm:flex-row gap-4 justify-center mb-16"
           >
             <Link
-              href="/download"
+              href="/about"
               className="group bg-gradient-to-r from-primary to-red-600 hover:from-red-600 hover:to-primary text-white px-10 py-5 rounded-xl text-lg font-semibold transition-all duration-300 shadow-2xl shadow-primary/30 hover:shadow-primary/50 hover:scale-105 flex items-center justify-center gap-2"
             >
-              Download Free App
+              Get Started Free
               <ArrowDown className="w-5 h-5 group-hover:translate-y-1 transition-transform" />
             </Link>
             <Link

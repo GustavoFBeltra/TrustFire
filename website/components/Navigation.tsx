@@ -4,7 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Menu, X, Download } from "lucide-react";
+import { Menu, X } from "lucide-react";
 
 export function Navigation() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -81,11 +81,10 @@ export function Navigation() {
                 <span className="absolute bottom-0 left-1/2 -translate-x-1/2 w-0 h-0.5 bg-primary transition-all duration-200 group-hover:w-3/4"></span>
               </Link>
               <Link
-                href="/download"
+                href="/about"
                 className="ml-4 bg-gradient-to-r from-primary to-red-600 hover:from-red-600 hover:to-primary text-white px-6 py-2.5 rounded-lg text-sm font-semibold transition-all duration-300 shadow-lg shadow-primary/20 hover:shadow-primary/40 hover:scale-105 flex items-center gap-2"
               >
-                <Download className="w-4 h-4" />
-                Download App
+                Get Started
               </Link>
             </div>
           </motion.div>
@@ -145,12 +144,11 @@ export function Navigation() {
                 About
               </Link>
               <Link
-                href="/download"
+                href="/about"
                 onClick={() => setMobileMenuOpen(false)}
                 className="bg-gradient-to-r from-primary to-red-600 text-white flex items-center justify-center gap-2 px-4 py-3 rounded-lg text-base font-semibold mt-4 shadow-lg shadow-primary/20"
               >
-                <Download className="w-4 h-4" />
-                Download App
+                Get Started
               </Link>
             </div>
           </motion.div>
