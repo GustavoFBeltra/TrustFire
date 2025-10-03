@@ -10,15 +10,15 @@ export function Navigation() {
   return (
     <nav className="bg-primary-dark border-b border-gray-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-20">
+        <div className="flex items-center justify-between h-24">
           {/* Logo */}
           <div className="flex items-center">
             <Link href="/" className="flex items-center gap-3">
               <Image
                 src="/logo.png"
                 alt="TrustFire Logo"
-                width={64}
-                height={64}
+                width={96}
+                height={96}
                 className="rounded-lg"
               />
               <span className="text-2xl font-bold text-white">TrustFire</span>
