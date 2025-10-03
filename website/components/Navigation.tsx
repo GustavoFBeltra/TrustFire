@@ -43,8 +43,8 @@ export function Navigation() {
               <Image
                 src="/logo.png"
                 alt="TrustFire Logo"
-                width={48}
-                height={48}
+                width={64}
+                height={64}
                 className="rounded-lg transition-transform group-hover:scale-110"
               />
               <span className="text-2xl font-bold text-white tracking-tight">TrustFire</span>
