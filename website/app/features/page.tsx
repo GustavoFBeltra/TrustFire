@@ -1,10 +1,11 @@
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
+import Image from "next/image";
 
 export default function FeaturesPage() {
   const features = [
     {
-      icon: "🛡️",
+      image: "/features/verified-ffls.png",
       title: "Verified FFLs Only",
       description: "Every Federal Firearms Licensee on our platform is verified. We check ATF licensing status to ensure you're working with legitimate, licensed dealers.",
       benefits: [
@@ -15,7 +16,7 @@ export default function FeaturesPage() {
       ],
     },
     {
-      icon: "✅",
+      image: "/features/legal-compliance.png",
       title: "100% Legal Compliance",
       description: "All transfers follow federal and state regulations. Background checks are conducted by licensed FFLs in accordance with ATF requirements.",
       benefits: [
@@ -26,7 +27,7 @@ export default function FeaturesPage() {
       ],
     },
     {
-      icon: "📱",
+      image: "/features/digital-trail.png",
       title: "Complete Digital Trail",
       description: "Every transaction is fully documented with downloadable receipts, transfer records, and compliance documentation.",
       benefits: [
@@ -37,7 +38,7 @@ export default function FeaturesPage() {
       ],
     },
     {
-      icon: "🔐",
+      image: "/features/secure-messaging.png",
       title: "Secure Messaging",
       description: "End-to-end encrypted communication between buyers, sellers, and FFLs. Your conversations are private and secure.",
       benefits: [
@@ -48,7 +49,7 @@ export default function FeaturesPage() {
       ],
     },
     {
-      icon: "📍",
+      image: "/features/ffl-finder.png",
       title: "FFL Finder",
       description: "Interactive map to locate verified FFLs near you. Filter by distance, ratings, and transfer fees.",
       benefits: [
@@ -59,7 +60,7 @@ export default function FeaturesPage() {
       ],
     },
     {
-      icon: "💼",
+      image: "/features/escrow-protection.png",
       title: "Escrow Protection",
       description: "Optional escrow service protects both buyers and sellers. Funds are held securely until transfer completion.",
       benefits: [
@@ -99,7 +100,6 @@ export default function FeaturesPage() {
                 } gap-12 items-center`}
               >
                 <div className="flex-1">
-                  <div className="text-7xl mb-6">{feature.icon}</div>
                   <h2 className="text-3xl font-bold text-white mb-4">
                     {feature.title}
                   </h2>
@@ -116,8 +116,14 @@ export default function FeaturesPage() {
                   </ul>
                 </div>
                 <div className="flex-1">
-                  <div className="bg-background-dark-alt border border-gray-800 rounded-2xl p-12 h-80 flex items-center justify-center">
-                    <div className="text-8xl opacity-20">{feature.icon}</div>
+                  <div className="bg-background-dark-alt border border-gray-800 rounded-2xl p-12 flex items-center justify-center">
+                    <Image
+                      src={feature.image}
+                      alt={feature.title}
+                      width={400}
+                      height={400}
+                      className="object-contain"
+                    />
                   </div>
                 </div>
               </div>
