@@ -5,6 +5,7 @@ import Image from "next/image";
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
+import { ThemeToggle } from "./ThemeToggle";
 
 export function Navigation() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -26,7 +27,7 @@ export function Navigation() {
       transition={{ duration: 0.3 }}
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         scrolled
-          ? "bg-primary-dark/90 backdrop-blur-glass border-b border-gray-800/50 shadow-lg"
+          ? "bg-card/90 backdrop-blur-glass border-b border-border shadow-lg"
           : "bg-transparent"
       }`}
     >
@@ -47,7 +48,7 @@ export function Navigation() {
                 height={64}
                 className="rounded-lg transition-transform group-hover:scale-110"
               />
-              <span className="text-2xl font-bold text-white tracking-tight">TrustFire</span>
+              <span className="text-2xl font-bold text-foreground tracking-tight">TrustFire</span>
             </Link>
           </motion.div>
 
@@ -61,25 +62,28 @@ export function Navigation() {
             <div className="ml-10 flex items-center space-x-1">
               <Link
                 href="/features"
-                className="text-gray-300 hover:text-white px-4 py-2 text-sm font-medium transition-all duration-200 rounded-lg hover:bg-white/5 relative group"
+                className="text-foreground/70 hover:text-foreground px-4 py-2 text-sm font-medium transition-all duration-200 rounded-lg hover:bg-muted relative group"
               >
                 Features
                 <span className="absolute bottom-0 left-1/2 -translate-x-1/2 w-0 h-0.5 bg-primary transition-all duration-200 group-hover:w-3/4"></span>
               </Link>
               <Link
                 href="/features"
-                className="text-gray-300 hover:text-white px-4 py-2 text-sm font-medium transition-all duration-200 rounded-lg hover:bg-white/5 relative group"
+                className="text-foreground/70 hover:text-foreground px-4 py-2 text-sm font-medium transition-all duration-200 rounded-lg hover:bg-muted relative group"
               >
                 How It Works
                 <span className="absolute bottom-0 left-1/2 -translate-x-1/2 w-0 h-0.5 bg-primary transition-all duration-200 group-hover:w-3/4"></span>
               </Link>
               <Link
                 href="/about"
-                className="text-gray-300 hover:text-white px-4 py-2 text-sm font-medium transition-all duration-200 rounded-lg hover:bg-white/5 relative group"
+                className="text-foreground/70 hover:text-foreground px-4 py-2 text-sm font-medium transition-all duration-200 rounded-lg hover:bg-muted relative group"
               >
                 About
                 <span className="absolute bottom-0 left-1/2 -translate-x-1/2 w-0 h-0.5 bg-primary transition-all duration-200 group-hover:w-3/4"></span>
               </Link>
+              <div className="ml-2">
+                <ThemeToggle />
+              </div>
               <Link
                 href="/about"
                 className="ml-4 bg-gradient-to-r from-primary to-red-600 hover:from-red-600 hover:to-primary text-white px-6 py-2.5 rounded-lg text-sm font-semibold transition-all duration-300 shadow-lg shadow-primary/20 hover:shadow-primary/40 hover:scale-105 flex items-center gap-2"
@@ -89,16 +93,17 @@ export function Navigation() {
             </div>
           </motion.div>
 
-          {/* Mobile menu button */}
+          {/* Mobile menu button and theme toggle */}
           <motion.div
             initial={{ opacity: 0, x: 20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5, delay: 0.1 }}
-            className="md:hidden"
+            className="md:hidden flex items-center gap-2"
           >
+            <ThemeToggle />
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="text-gray-400 hover:text-white p-2 rounded-lg hover:bg-white/5 transition-colors"
+              className="text-foreground/70 hover:text-foreground p-2 rounded-lg hover:bg-muted transition-colors"
               aria-label="Toggle menu"
             >
               {mobileMenuOpen ? (
@@ -119,27 +124,27 @@ export function Navigation() {
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.3 }}
-            className="md:hidden bg-background-dark-alt/95 backdrop-blur-glass border-t border-gray-800/50"
+            className="md:hidden bg-card/95 backdrop-blur-glass border-t border-border"
           >
             <div className="px-4 pt-2 pb-4 space-y-2">
               <Link
                 href="/features"
                 onClick={() => setMobileMenuOpen(false)}
-                className="text-gray-300 hover:text-white hover:bg-white/5 block px-4 py-3 text-base font-medium rounded-lg transition-all"
+                className="text-foreground/70 hover:text-foreground hover:bg-muted block px-4 py-3 text-base font-medium rounded-lg transition-all"
               >
                 Features
               </Link>
               <Link
                 href="/features"
                 onClick={() => setMobileMenuOpen(false)}
-                className="text-gray-300 hover:text-white hover:bg-white/5 block px-4 py-3 text-base font-medium rounded-lg transition-all"
+                className="text-foreground/70 hover:text-foreground hover:bg-muted block px-4 py-3 text-base font-medium rounded-lg transition-all"
               >
                 How It Works
               </Link>
               <Link
                 href="/about"
                 onClick={() => setMobileMenuOpen(false)}
-                className="text-gray-300 hover:text-white hover:bg-white/5 block px-4 py-3 text-base font-medium rounded-lg transition-all"
+                className="text-foreground/70 hover:text-foreground hover:bg-muted block px-4 py-3 text-base font-medium rounded-lg transition-all"
               >
                 About
               </Link>

@@ -69,7 +69,7 @@ export function Features() {
   }, []);
 
   return (
-    <section ref={sectionRef} className="bg-black py-24 relative overflow-hidden">
+    <section ref={sectionRef} className="bg-background py-24 relative overflow-hidden">
       {/* Background gradient */}
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-primary/5 to-transparent"></div>
 
@@ -81,10 +81,10 @@ export function Features() {
           transition={{ duration: 0.6 }}
           className="text-center mb-20"
         >
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-6">
             Why Choose <span className="text-gradient">TrustFire</span>?
           </h2>
-          <p className="text-xl md:text-2xl text-gray-400 max-w-3xl mx-auto">
+          <p className="text-xl md:text-2xl text-foreground/60 max-w-3xl mx-auto">
             Built for compliance, designed for simplicity, trusted by the community.
           </p>
         </motion.div>
@@ -99,7 +99,7 @@ export function Features() {
                 initial={{ opacity: 0, y: 30 }}
                 animate={isVisible ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="group relative bg-gradient-to-br from-background-dark-alt to-black border border-gray-800 rounded-2xl p-8 hover:border-primary/50 transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-primary/10"
+                className="group relative bg-gradient-to-br from-card to-muted border border-border rounded-2xl p-8 hover:border-primary/50 transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-primary/10"
               >
                 {/* Gradient overlay on hover */}
                 <div className="absolute inset-0 bg-gradient-to-br from-primary/0 to-primary/0 group-hover:from-primary/5 group-hover:to-transparent rounded-2xl transition-all duration-300"></div>
@@ -110,10 +110,10 @@ export function Features() {
                     <Icon className="w-8 h-8 text-white" />
                   </div>
 
-                  <h3 className="text-2xl font-bold text-white mb-4 group-hover:text-gradient transition-all duration-300">
+                  <h3 className="text-2xl font-bold text-foreground mb-4 group-hover:text-gradient transition-all duration-300">
                     {feature.title}
                   </h3>
-                  <p className="text-gray-400 leading-relaxed group-hover:text-gray-300 transition-colors">
+                  <p className="text-foreground/60 leading-relaxed group-hover:text-foreground/70 transition-colors">
                     {feature.description}
                   </p>
                 </div>

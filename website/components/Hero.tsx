@@ -6,7 +6,7 @@ import { ArrowDown, Shield, CheckCircle2, FileCheck } from "lucide-react";
 
 export function Hero() {
   return (
-    <section className="relative bg-gradient-to-b from-primary-dark via-primary-dark to-black overflow-hidden min-h-screen flex items-center">
+    <section className="relative bg-gradient-to-b from-card via-card to-background overflow-hidden min-h-screen flex items-center">
       {/* Animated Background Pattern */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute -top-1/2 -right-1/2 w-full h-full bg-primary rounded-full blur-3xl opacity-10 animate-pulse"></div>
@@ -40,7 +40,7 @@ export function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.1 }}
-            className="text-5xl md:text-7xl lg:text-8xl font-bold text-white mb-6 leading-tight"
+            className="text-5xl md:text-7xl lg:text-8xl font-bold text-foreground mb-6 leading-tight"
           >
             Safe, Legal, Simple
             <br />
@@ -52,7 +52,7 @@ export function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="text-xl md:text-2xl text-gray-300 mb-12 max-w-3xl mx-auto leading-relaxed"
+            className="text-xl md:text-2xl text-foreground/70 mb-12 max-w-3xl mx-auto leading-relaxed"
           >
             Connect with verified FFLs, complete legal transfers, and maintain
             full compliance with federal and state regulations.
@@ -74,7 +74,7 @@ export function Hero() {
             </Link>
             <Link
               href="/features"
-              className="bg-white/5 hover:bg-white/10 backdrop-blur-sm text-white px-10 py-5 rounded-xl text-lg font-semibold transition-all duration-300 border border-white/10 hover:border-white/20 hover:scale-105"
+              className="bg-muted hover:bg-muted/80 backdrop-blur-sm text-foreground px-10 py-5 rounded-xl text-lg font-semibold transition-all duration-300 border border-border hover:border-primary/30 hover:scale-105"
             >
               See How It Works
             </Link>
@@ -85,17 +85,17 @@ export function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.4 }}
-            className="flex flex-wrap justify-center gap-6 md:gap-10 text-gray-300"
+            className="flex flex-wrap justify-center gap-6 md:gap-10 text-foreground/70"
           >
-            <div className="flex items-center gap-3 bg-white/5 backdrop-blur-sm px-6 py-3 rounded-full border border-white/10">
+            <div className="flex items-center gap-3 bg-muted backdrop-blur-sm px-6 py-3 rounded-full border border-border">
               <Shield className="w-5 h-5 text-green-400" />
               <span className="font-medium">Verified FFLs Only</span>
             </div>
-            <div className="flex items-center gap-3 bg-white/5 backdrop-blur-sm px-6 py-3 rounded-full border border-white/10">
+            <div className="flex items-center gap-3 bg-muted backdrop-blur-sm px-6 py-3 rounded-full border border-border">
               <CheckCircle2 className="w-5 h-5 text-green-400" />
               <span className="font-medium">100% Legal Compliance</span>
             </div>
-            <div className="flex items-center gap-3 bg-white/5 backdrop-blur-sm px-6 py-3 rounded-full border border-white/10">
+            <div className="flex items-center gap-3 bg-muted backdrop-blur-sm px-6 py-3 rounded-full border border-border">
               <FileCheck className="w-5 h-5 text-green-400" />
               <span className="font-medium">Complete Digital Trail</span>
             </div>
@@ -111,7 +111,7 @@ export function Hero() {
             <motion.div
               animate={{ y: [0, 10, 0] }}
               transition={{ duration: 2, repeat: Infinity }}
-              className="text-gray-500 cursor-pointer"
+              className="text-foreground/30 cursor-pointer"
             >
               <ArrowDown className="w-6 h-6" />
             </motion.div>
@@ -125,11 +125,11 @@ export function Hero() {
           viewBox="0 0 1440 120"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
-          className="w-full"
+          className="w-full text-background"
         >
           <path
             d="M0 0L60 10C120 20 240 40 360 46.7C480 53 600 47 720 43.3C840 40 960 40 1080 46.7C1200 53 1320 67 1380 73.3L1440 80V120H1380C1320 120 1200 120 1080 120C960 120 840 120 720 120C600 120 480 120 360 120C240 120 120 120 60 120H0V0Z"
-            fill="#000000"
+            fill="currentColor"
           />
         </svg>
       </div>

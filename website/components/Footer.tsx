@@ -18,7 +18,7 @@ export function Footer() {
   };
 
   return (
-    <footer className="bg-black border-t border-gray-800">
+    <footer className="bg-background border-t border-border">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-12 mb-12">
           {/* Brand */}
@@ -31,15 +31,15 @@ export function Footer() {
                 height={40}
                 className="rounded-lg"
               />
-              <span className="text-2xl font-bold text-white">TrustFire</span>
+              <span className="text-2xl font-bold text-foreground">TrustFire</span>
             </div>
-            <p className="text-gray-400 mb-6 leading-relaxed">
+            <p className="text-foreground/60 mb-6 leading-relaxed">
               Safe, legal, simple firearm transfers. Connecting verified users with licensed FFLs across the nation.
             </p>
 
             {/* Newsletter */}
             <div>
-              <h4 className="text-white font-semibold mb-3">Stay Updated</h4>
+              <h4 className="text-foreground font-semibold mb-3">Stay Updated</h4>
               <form onSubmit={handleSubscribe} className="flex gap-2">
                 <div className="relative flex-1">
                   <Mail className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-500" />
@@ -48,7 +48,7 @@ export function Footer() {
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
                     placeholder="Enter your email"
-                    className="w-full bg-background-dark-alt border border-gray-800 rounded-lg pl-10 pr-4 py-2.5 text-white text-sm placeholder:text-gray-500 focus:outline-none focus:border-primary transition"
+                    className="w-full bg-card border border-border rounded-lg pl-10 pr-4 py-2.5 text-foreground text-sm placeholder:text-foreground/40 focus:outline-none focus:border-primary transition"
                     required
                   />
                 </div>
@@ -68,28 +68,28 @@ export function Footer() {
             <div className="flex gap-3 mt-6">
               <a
                 href="#"
-                className="w-10 h-10 bg-background-dark-alt border border-gray-800 rounded-lg flex items-center justify-center text-gray-400 hover:text-white hover:border-primary transition-all duration-300 hover:scale-110"
+                className="w-10 h-10 bg-card border border-border rounded-lg flex items-center justify-center text-foreground/60 hover:text-foreground hover:border-primary transition-all duration-300 hover:scale-110"
                 aria-label="Twitter"
               >
                 <Twitter className="w-4 h-4" />
               </a>
               <a
                 href="#"
-                className="w-10 h-10 bg-background-dark-alt border border-gray-800 rounded-lg flex items-center justify-center text-gray-400 hover:text-white hover:border-primary transition-all duration-300 hover:scale-110"
+                className="w-10 h-10 bg-card border border-border rounded-lg flex items-center justify-center text-foreground/60 hover:text-foreground hover:border-primary transition-all duration-300 hover:scale-110"
                 aria-label="Facebook"
               >
                 <Facebook className="w-4 h-4" />
               </a>
               <a
                 href="#"
-                className="w-10 h-10 bg-background-dark-alt border border-gray-800 rounded-lg flex items-center justify-center text-gray-400 hover:text-white hover:border-primary transition-all duration-300 hover:scale-110"
+                className="w-10 h-10 bg-card border border-border rounded-lg flex items-center justify-center text-foreground/60 hover:text-foreground hover:border-primary transition-all duration-300 hover:scale-110"
                 aria-label="Instagram"
               >
                 <Instagram className="w-4 h-4" />
               </a>
               <a
                 href="#"
-                className="w-10 h-10 bg-background-dark-alt border border-gray-800 rounded-lg flex items-center justify-center text-gray-400 hover:text-white hover:border-primary transition-all duration-300 hover:scale-110"
+                className="w-10 h-10 bg-card border border-border rounded-lg flex items-center justify-center text-foreground/60 hover:text-foreground hover:border-primary transition-all duration-300 hover:scale-110"
                 aria-label="LinkedIn"
               >
                 <Linkedin className="w-4 h-4" />
@@ -99,23 +99,23 @@ export function Footer() {
 
           {/* Product */}
           <div>
-            <h3 className="text-white font-semibold mb-4 text-lg">Product</h3>
+            <h3 className="text-foreground font-semibold mb-4 text-lg">Product</h3>
             <ul className="space-y-3">
               <li>
-                <Link href="/features" className="text-gray-400 hover:text-primary text-sm transition-colors flex items-center gap-2 group">
-                  <span className="w-1 h-1 bg-gray-600 rounded-full group-hover:bg-primary transition-colors"></span>
+                <Link href="/features" className="text-foreground/60 hover:text-primary text-sm transition-colors flex items-center gap-2 group">
+                  <span className="w-1 h-1 bg-foreground/30 rounded-full group-hover:bg-primary transition-colors"></span>
                   Features
                 </Link>
               </li>
               <li>
-                <Link href="/features" className="text-gray-400 hover:text-primary text-sm transition-colors flex items-center gap-2 group">
-                  <span className="w-1 h-1 bg-gray-600 rounded-full group-hover:bg-primary transition-colors"></span>
+                <Link href="/features" className="text-foreground/60 hover:text-primary text-sm transition-colors flex items-center gap-2 group">
+                  <span className="w-1 h-1 bg-foreground/30 rounded-full group-hover:bg-primary transition-colors"></span>
                   How It Works
                 </Link>
               </li>
               <li>
-                <Link href="/about" className="text-gray-400 hover:text-primary text-sm transition-colors flex items-center gap-2 group">
-                  <span className="w-1 h-1 bg-gray-600 rounded-full group-hover:bg-primary transition-colors"></span>
+                <Link href="/about" className="text-foreground/60 hover:text-primary text-sm transition-colors flex items-center gap-2 group">
+                  <span className="w-1 h-1 bg-foreground/30 rounded-full group-hover:bg-primary transition-colors"></span>
                   Get Started
                 </Link>
               </li>
@@ -124,23 +124,23 @@ export function Footer() {
 
           {/* Company */}
           <div>
-            <h3 className="text-white font-semibold mb-4 text-lg">Company</h3>
+            <h3 className="text-foreground font-semibold mb-4 text-lg">Company</h3>
             <ul className="space-y-3">
               <li>
-                <Link href="/about" className="text-gray-400 hover:text-primary text-sm transition-colors flex items-center gap-2 group">
-                  <span className="w-1 h-1 bg-gray-600 rounded-full group-hover:bg-primary transition-colors"></span>
+                <Link href="/about" className="text-foreground/60 hover:text-primary text-sm transition-colors flex items-center gap-2 group">
+                  <span className="w-1 h-1 bg-foreground/30 rounded-full group-hover:bg-primary transition-colors"></span>
                   About
                 </Link>
               </li>
               <li>
-                <Link href="/about" className="text-gray-400 hover:text-primary text-sm transition-colors flex items-center gap-2 group">
-                  <span className="w-1 h-1 bg-gray-600 rounded-full group-hover:bg-primary transition-colors"></span>
+                <Link href="/about" className="text-foreground/60 hover:text-primary text-sm transition-colors flex items-center gap-2 group">
+                  <span className="w-1 h-1 bg-foreground/30 rounded-full group-hover:bg-primary transition-colors"></span>
                   Contact
                 </Link>
               </li>
               <li>
-                <Link href="/about" className="text-gray-400 hover:text-primary text-sm transition-colors flex items-center gap-2 group">
-                  <span className="w-1 h-1 bg-gray-600 rounded-full group-hover:bg-primary transition-colors"></span>
+                <Link href="/about" className="text-foreground/60 hover:text-primary text-sm transition-colors flex items-center gap-2 group">
+                  <span className="w-1 h-1 bg-foreground/30 rounded-full group-hover:bg-primary transition-colors"></span>
                   Support
                 </Link>
               </li>
@@ -149,23 +149,23 @@ export function Footer() {
 
           {/* Legal */}
           <div>
-            <h3 className="text-white font-semibold mb-4 text-lg">Legal</h3>
+            <h3 className="text-foreground font-semibold mb-4 text-lg">Legal</h3>
             <ul className="space-y-3">
               <li>
-                <Link href="/about" className="text-gray-400 hover:text-primary text-sm transition-colors flex items-center gap-2 group">
-                  <span className="w-1 h-1 bg-gray-600 rounded-full group-hover:bg-primary transition-colors"></span>
+                <Link href="/about" className="text-foreground/60 hover:text-primary text-sm transition-colors flex items-center gap-2 group">
+                  <span className="w-1 h-1 bg-foreground/30 rounded-full group-hover:bg-primary transition-colors"></span>
                   Terms of Service
                 </Link>
               </li>
               <li>
-                <Link href="/about" className="text-gray-400 hover:text-primary text-sm transition-colors flex items-center gap-2 group">
-                  <span className="w-1 h-1 bg-gray-600 rounded-full group-hover:bg-primary transition-colors"></span>
+                <Link href="/about" className="text-foreground/60 hover:text-primary text-sm transition-colors flex items-center gap-2 group">
+                  <span className="w-1 h-1 bg-foreground/30 rounded-full group-hover:bg-primary transition-colors"></span>
                   Privacy Policy
                 </Link>
               </li>
               <li>
-                <Link href="/about" className="text-gray-400 hover:text-primary text-sm transition-colors flex items-center gap-2 group">
-                  <span className="w-1 h-1 bg-gray-600 rounded-full group-hover:bg-primary transition-colors"></span>
+                <Link href="/about" className="text-foreground/60 hover:text-primary text-sm transition-colors flex items-center gap-2 group">
+                  <span className="w-1 h-1 bg-foreground/30 rounded-full group-hover:bg-primary transition-colors"></span>
                   Compliance
                 </Link>
               </li>
@@ -174,24 +174,24 @@ export function Footer() {
         </div>
 
         {/* Compliance Warning */}
-        <div className="bg-background-dark-alt border border-gray-800 rounded-xl p-4 mb-8">
+        <div className="bg-card border border-border rounded-xl p-4 mb-8">
           <div className="flex items-start gap-3">
             <AlertCircle className="w-5 h-5 text-yellow-500 flex-shrink-0 mt-0.5" />
             <div>
-              <p className="text-gray-300 text-sm leading-relaxed">
-                <span className="font-semibold text-white">Important:</span> All firearm transfers facilitated through TrustFire must comply with federal, state, and local laws. Users are responsible for ensuring compliance with all applicable regulations.
+              <p className="text-foreground/70 text-sm leading-relaxed">
+                <span className="font-semibold text-foreground">Important:</span> All firearm transfers facilitated through TrustFire must comply with federal, state, and local laws. Users are responsible for ensuring compliance with all applicable regulations.
               </p>
             </div>
           </div>
         </div>
 
         {/* Bottom */}
-        <div className="border-t border-gray-800 pt-8">
+        <div className="border-t border-border pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-            <p className="text-gray-500 text-sm">
+            <p className="text-foreground/40 text-sm">
               © 2025 TrustFire. All rights reserved.
             </p>
-            <div className="flex flex-wrap gap-6 text-xs text-gray-600">
+            <div className="flex flex-wrap gap-6 text-xs text-foreground/30">
               <span>Made with care in the USA</span>
               <span>•</span>
               <span>Committed to legal compliance</span>

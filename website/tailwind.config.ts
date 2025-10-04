@@ -6,6 +6,7 @@ export default {
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
+  darkMode: "class",
   theme: {
     extend: {
       colors: {
@@ -13,18 +14,14 @@ export default {
           DEFAULT: '#f0413f',
           dark: '#1b1c1c',
         },
-        background: {
-          light: '#f9f9f9',
-          dark: '#1b1c1c',
-          'dark-alt': '#2a2b2b',
+        background: 'rgb(var(--background) / <alpha-value>)',
+        foreground: 'rgb(var(--foreground) / <alpha-value>)',
+        card: {
+          DEFAULT: 'rgb(var(--card) / <alpha-value>)',
+          foreground: 'rgb(var(--card-foreground) / <alpha-value>)',
         },
-        text: {
-          primary: '#1b1c1c',
-          'primary-dark': '#ffffff',
-          secondary: '#6c6c6c',
-          'secondary-dark': '#6c6c6c',
-          disabled: '#a5a5a5',
-        },
+        muted: 'rgb(var(--muted) / <alpha-value>)',
+        border: 'rgb(var(--border) / <alpha-value>)',
       },
     },
   },
