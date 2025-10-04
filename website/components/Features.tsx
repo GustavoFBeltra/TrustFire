@@ -1,42 +1,42 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Shield, CheckCircle2, FileText, Lock, MapPin, Briefcase } from "lucide-react";
+import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 
 const features = [
   {
-    icon: Shield,
+    image: "/features/verified-ffls.png",
     title: "Verified FFLs Only",
     description: "All dealers are licensed and verified. Never worry about legitimacy or compliance.",
     color: "from-blue-500 to-cyan-500",
   },
   {
-    icon: CheckCircle2,
+    image: "/features/legal-compliance.png",
     title: "100% Legal Compliance",
     description: "Fully compliant with federal and state regulations. Background checks handled by licensed FFLs.",
     color: "from-green-500 to-emerald-500",
   },
   {
-    icon: FileText,
+    image: "/features/digital-trail.png",
     title: "Complete Digital Trail",
     description: "Every transaction documented. Download receipts, track transfers, maintain records.",
     color: "from-purple-500 to-pink-500",
   },
   {
-    icon: Lock,
+    image: "/features/secure-messaging.png",
     title: "Secure Messaging",
     description: "End-to-end encrypted communication between buyers, sellers, and FFLs.",
     color: "from-red-500 to-orange-500",
   },
   {
-    icon: MapPin,
+    image: "/features/ffl-finder.png",
     title: "Find Nearby FFLs",
     description: "Locate verified Federal Firearms Licensees near you with our interactive map.",
     color: "from-yellow-500 to-amber-500",
   },
   {
-    icon: Briefcase,
+    image: "/features/escrow-protection.png",
     title: "Escrow Protection",
     description: "Optional escrow service ensures funds are protected until transfer completion.",
     color: "from-indigo-500 to-blue-500",
@@ -92,7 +92,6 @@ export function Features() {
         {/* Features Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {features.map((feature, index) => {
-            const Icon = feature.icon;
             return (
               <motion.div
                 key={index}
@@ -105,9 +104,17 @@ export function Features() {
                 <div className="absolute inset-0 bg-gradient-to-br from-primary/0 to-primary/0 group-hover:from-primary/5 group-hover:to-transparent rounded-2xl transition-all duration-300"></div>
 
                 <div className="relative">
-                  {/* Icon with gradient background */}
-                  <div className={`inline-flex p-4 rounded-xl bg-gradient-to-br ${feature.color} mb-6`}>
-                    <Icon className="w-8 h-8 text-white" />
+                  {/* Feature Image */}
+                  <div className="mb-6 flex justify-center">
+                    <div className="relative w-32 h-32 rounded-xl overflow-hidden bg-white/5 p-4">
+                      <Image
+                        src={feature.image}
+                        alt={feature.title}
+                        width={128}
+                        height={128}
+                        className="object-contain group-hover:scale-110 transition-transform duration-300"
+                      />
+                    </div>
                   </div>
 
                   <h3 className="text-2xl font-bold text-white mb-4 group-hover:text-gradient transition-all duration-300">
