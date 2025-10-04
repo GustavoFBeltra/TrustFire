@@ -116,13 +116,13 @@ export default function FeaturesPage() {
                   </ul>
                 </div>
                 <div className="flex-1">
-                  <div className="bg-background-dark-alt border border-gray-800 rounded-2xl p-12 flex items-center justify-center">
+                  <div className="bg-background-dark-alt border border-gray-800 rounded-2xl overflow-hidden">
                     <Image
                       src={feature.image}
                       alt={feature.title}
-                      width={400}
-                      height={400}
-                      className="object-contain"
+                      width={600}
+                      height={600}
+                      className="w-full h-full object-cover"
                     />
                   </div>
                 </div>
