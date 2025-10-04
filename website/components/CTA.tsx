@@ -51,10 +51,10 @@ export function CTA() {
             <span className="text-primary text-sm font-semibold">Web-Based Platform</span>
           </div>
 
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white mb-6 tracking-tight">
             Ready to Get <span className="text-gradient">Started</span>?
           </h2>
-          <p className="text-xl md:text-2xl text-gray-300 mb-12 max-w-3xl mx-auto">
+          <p className="text-xl md:text-2xl text-gray-300 mb-12 max-w-3xl mx-auto font-normal">
             Join thousands of users completing safe, legal firearm transfers through our secure web platform.
           </p>
 
@@ -67,7 +67,7 @@ export function CTA() {
           >
             <Link
               href="/about"
-              className="group relative bg-gradient-to-r from-primary to-red-600 hover:from-red-600 hover:to-primary text-white px-10 py-5 rounded-xl text-lg font-semibold transition-all duration-300 shadow-2xl hover:scale-105 flex items-center justify-center gap-3 overflow-hidden"
+              className="group relative bg-gradient-to-r from-primary to-red-600 hover:from-red-600 hover:to-primary text-white px-10 py-5 rounded-xl text-lg font-semibold transition-all duration-300 shadow-elevation-5 dark:shadow-elevation-5-dark hover:shadow-glow-lg hover:scale-105 flex items-center justify-center gap-3 overflow-hidden"
             >
               <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700"></div>
               <span>Launch Web App</span>
@@ -75,7 +75,7 @@ export function CTA() {
             </Link>
             <Link
               href="/features"
-              className="bg-white/5 hover:bg-white/10 backdrop-blur-sm text-white px-10 py-5 rounded-xl text-lg font-semibold transition-all duration-300 border border-white/10 hover:border-white/20 hover:scale-105"
+              className="bg-white/5 hover:bg-white/10 backdrop-blur-sm text-white px-10 py-5 rounded-xl text-lg font-semibold transition-all duration-300 border border-white/10 hover:border-white/20 hover:scale-105 shadow-elevation-2 dark:shadow-elevation-2-dark"
             >
               Learn More
             </Link>
@@ -119,13 +119,13 @@ export function CTA() {
             initial={{ opacity: 0, y: 20 }}
             animate={isVisible ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.6, delay: 0.6 }}
-            className="max-w-2xl mx-auto bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-8"
+            className="max-w-2xl mx-auto bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-8 shadow-elevation-3 dark:shadow-elevation-3-dark"
           >
             <div className="flex items-center justify-center gap-3 mb-4">
               <Globe className="w-6 h-6 text-primary" />
-              <h3 className="text-xl font-bold text-white">Access Anywhere</h3>
+              <h3 className="text-xl font-bold text-white tracking-tight">Access Anywhere</h3>
             </div>
-            <p className="text-gray-400 leading-relaxed">
+            <p className="text-base text-gray-400 leading-relaxed font-normal">
               Our web-based platform works seamlessly on desktop, tablet, and mobile devices. Access your account, browse listings, and manage transfers from anywhere with an internet connection.
             </p>
           </motion.div>

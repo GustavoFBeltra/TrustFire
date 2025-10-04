@@ -71,10 +71,10 @@ export function FAQ() {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white mb-6 tracking-tight">
             Frequently Asked <span className="text-gradient">Questions</span>
           </h2>
-          <p className="text-xl text-gray-400 max-w-2xl mx-auto">
+          <p className="text-xl text-gray-400 max-w-2xl mx-auto font-normal">
             Everything you need to know about TrustFire and firearm transfers.
           </p>
         </motion.div>
@@ -87,13 +87,13 @@ export function FAQ() {
               initial={{ opacity: 0, y: 20 }}
               animate={isVisible ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="bg-gradient-to-br from-background-dark-alt to-black border border-gray-800 rounded-2xl overflow-hidden hover:border-primary/50 transition-all duration-300"
+              className="bg-gradient-to-br from-background-dark-alt to-black border border-gray-800 rounded-2xl overflow-hidden hover:border-primary/50 transition-all duration-300 shadow-elevation-2 dark:shadow-elevation-2-dark hover:shadow-elevation-3 hover:dark:shadow-elevation-3-dark"
             >
               <button
                 onClick={() => setOpenIndex(openIndex === index ? null : index)}
                 className="w-full px-6 py-5 flex items-center justify-between text-left hover:bg-white/5 transition-colors"
               >
-                <span className="text-lg font-semibold text-white pr-8">
+                <span className="text-lg font-semibold text-white pr-8 tracking-tight">
                   {faq.question}
                 </span>
                 <div className="flex-shrink-0 w-8 h-8 rounded-full bg-primary/20 flex items-center justify-center">
@@ -114,7 +114,7 @@ export function FAQ() {
                     transition={{ duration: 0.3 }}
                     className="overflow-hidden"
                   >
-                    <div className="px-6 pb-5 text-gray-400 leading-relaxed">
+                    <div className="px-6 pb-5 text-base text-gray-400 leading-relaxed font-normal">
                       {faq.answer}
                     </div>
                   </motion.div>

@@ -74,10 +74,10 @@ export function HowItWorks() {
           transition={{ duration: 0.6 }}
           className="text-center mb-20"
         >
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white mb-6 tracking-tight">
             How It <span className="text-gradient">Works</span>
           </h2>
-          <p className="text-xl md:text-2xl text-gray-400 max-w-3xl mx-auto">
+          <p className="text-xl md:text-2xl text-gray-400 max-w-3xl mx-auto font-normal">
             Simple, legal firearm transfers in four easy steps.
           </p>
         </motion.div>
@@ -105,7 +105,7 @@ export function HowItWorks() {
                     </div>
                   )}
 
-                  <div className="relative bg-gradient-to-br from-background-dark-alt to-black border border-gray-800 rounded-2xl p-8 hover:border-primary/50 transition-all duration-300 hover:scale-105 h-full hover:shadow-2xl hover:shadow-primary/10">
+                  <div className="relative bg-gradient-to-br from-background-dark-alt to-black border border-gray-800 rounded-2xl p-8 hover:border-primary/50 transition-all duration-300 hover:scale-105 h-full shadow-elevation-3 dark:shadow-elevation-3-dark hover:shadow-elevation-5 hover:dark:shadow-elevation-5-dark">
                     {/* Step number */}
                     <div className="absolute top-4 right-4 text-6xl font-bold text-white/5">
                       {step.number}
@@ -116,10 +116,10 @@ export function HowItWorks() {
                       <Icon className="w-8 h-8 text-white" />
                     </div>
 
-                    <h3 className="text-2xl font-bold text-white mb-4 relative z-10">
+                    <h3 className="text-2xl font-bold text-white mb-4 relative z-10 tracking-tight">
                       {step.title}
                     </h3>
-                    <p className="text-gray-400 leading-relaxed relative z-10">
+                    <p className="text-base text-gray-400 leading-relaxed relative z-10 font-normal">
                       {step.description}
                     </p>
 

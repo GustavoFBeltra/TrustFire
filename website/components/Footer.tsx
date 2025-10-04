@@ -31,15 +31,15 @@ export function Footer() {
                 height={40}
                 className="rounded-lg"
               />
-              <span className="text-2xl font-bold text-foreground">TrustFire</span>
+              <span className="text-2xl font-extrabold text-foreground tracking-tight">TrustFire</span>
             </div>
-            <p className="text-foreground/60 mb-6 leading-relaxed">
+            <p className="text-base text-foreground/60 mb-6 leading-relaxed font-normal">
               Safe, legal, simple firearm transfers. Connecting verified users with licensed FFLs across the nation.
             </p>
 
             {/* Newsletter */}
             <div>
-              <h4 className="text-foreground font-semibold mb-3">Stay Updated</h4>
+              <h4 className="text-foreground font-semibold mb-3 tracking-tight">Stay Updated</h4>
               <form onSubmit={handleSubscribe} className="flex gap-2">
                 <div className="relative flex-1">
                   <Mail className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-500" />
@@ -99,7 +99,7 @@ export function Footer() {
 
           {/* Product */}
           <div>
-            <h3 className="text-foreground font-semibold mb-4 text-lg">Product</h3>
+            <h3 className="text-foreground font-semibold mb-4 text-lg tracking-tight">Product</h3>
             <ul className="space-y-3">
               <li>
                 <Link href="/features" className="text-foreground/60 hover:text-primary text-sm transition-colors flex items-center gap-2 group">
@@ -124,7 +124,7 @@ export function Footer() {
 
           {/* Company */}
           <div>
-            <h3 className="text-foreground font-semibold mb-4 text-lg">Company</h3>
+            <h3 className="text-foreground font-semibold mb-4 text-lg tracking-tight">Company</h3>
             <ul className="space-y-3">
               <li>
                 <Link href="/about" className="text-foreground/60 hover:text-primary text-sm transition-colors flex items-center gap-2 group">
@@ -149,7 +149,7 @@ export function Footer() {
 
           {/* Legal */}
           <div>
-            <h3 className="text-foreground font-semibold mb-4 text-lg">Legal</h3>
+            <h3 className="text-foreground font-semibold mb-4 text-lg tracking-tight">Legal</h3>
             <ul className="space-y-3">
               <li>
                 <Link href="/about" className="text-foreground/60 hover:text-primary text-sm transition-colors flex items-center gap-2 group">
@@ -174,11 +174,11 @@ export function Footer() {
         </div>
 
         {/* Compliance Warning */}
-        <div className="bg-card border border-border rounded-xl p-4 mb-8">
+        <div className="bg-card border border-border rounded-xl p-4 mb-8 shadow-inset-1 dark:shadow-inset-dark">
           <div className="flex items-start gap-3">
             <AlertCircle className="w-5 h-5 text-yellow-500 flex-shrink-0 mt-0.5" />
             <div>
-              <p className="text-foreground/70 text-sm leading-relaxed">
+              <p className="text-foreground/70 text-sm leading-relaxed font-normal">
                 <span className="font-semibold text-foreground">Important:</span> All firearm transfers facilitated through TrustFire must comply with federal, state, and local laws. Users are responsible for ensuring compliance with all applicable regulations.
               </p>
             </div>

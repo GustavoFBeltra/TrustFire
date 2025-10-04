@@ -27,7 +27,7 @@ export function Navigation() {
       transition={{ duration: 0.3 }}
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         scrolled
-          ? "bg-card/90 backdrop-blur-glass border-b border-border shadow-lg"
+          ? "bg-card/90 backdrop-blur-glass border-b border-border shadow-elevation-4 dark:shadow-elevation-4-dark"
           : "bg-transparent"
       }`}
     >
@@ -48,7 +48,7 @@ export function Navigation() {
                 height={64}
                 className="rounded-lg transition-transform group-hover:scale-110"
               />
-              <span className="text-2xl font-bold text-foreground tracking-tight">TrustFire</span>
+              <span className="text-2xl font-extrabold text-foreground tracking-tight">TrustFire</span>
             </Link>
           </motion.div>
 
@@ -86,7 +86,7 @@ export function Navigation() {
               </div>
               <Link
                 href="/about"
-                className="ml-4 bg-gradient-to-r from-primary to-red-600 hover:from-red-600 hover:to-primary text-white px-6 py-2.5 rounded-lg text-sm font-semibold transition-all duration-300 shadow-lg shadow-primary/20 hover:shadow-primary/40 hover:scale-105 flex items-center gap-2"
+                className="ml-4 bg-gradient-to-r from-primary to-red-600 hover:from-red-600 hover:to-primary text-white px-6 py-2.5 rounded-lg text-sm font-semibold transition-all duration-300 shadow-elevation-3 dark:shadow-elevation-3-dark hover:shadow-glow-md hover:scale-105 flex items-center gap-2"
               >
                 Get Started
               </Link>
@@ -151,7 +151,7 @@ export function Navigation() {
               <Link
                 href="/about"
                 onClick={() => setMobileMenuOpen(false)}
-                className="bg-gradient-to-r from-primary to-red-600 text-white flex items-center justify-center gap-2 px-4 py-3 rounded-lg text-base font-semibold mt-4 shadow-lg shadow-primary/20"
+                className="bg-gradient-to-r from-primary to-red-600 text-white flex items-center justify-center gap-2 px-4 py-3 rounded-lg text-base font-semibold mt-4 shadow-elevation-3 dark:shadow-elevation-3-dark"
               >
                 Get Started
               </Link>

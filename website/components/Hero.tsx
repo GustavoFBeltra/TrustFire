@@ -32,7 +32,7 @@ export function Hero() {
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
               <span className="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
             </span>
-            <span className="text-primary text-sm font-semibold tracking-wide">Now Available Nationwide</span>
+            <span className="text-primary text-sm font-semibold">Now Available Nationwide</span>
           </motion.div>
 
           {/* Heading */}
@@ -40,7 +40,7 @@ export function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.1 }}
-            className="text-5xl md:text-7xl lg:text-8xl font-bold text-foreground mb-6 leading-tight"
+            className="text-5xl md:text-7xl lg:text-8xl font-extrabold text-foreground mb-6 tracking-tight"
           >
             Safe, Legal, Simple
             <br />
@@ -52,7 +52,7 @@ export function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="text-xl md:text-2xl text-foreground/70 mb-12 max-w-3xl mx-auto leading-relaxed"
+            className="text-xl md:text-2xl text-foreground/70 mb-12 max-w-3xl mx-auto font-normal"
           >
             Connect with verified FFLs, complete legal transfers, and maintain
             full compliance with federal and state regulations.
@@ -67,14 +67,14 @@ export function Hero() {
           >
             <Link
               href="/about"
-              className="group bg-gradient-to-r from-primary to-red-600 hover:from-red-600 hover:to-primary text-white px-10 py-5 rounded-xl text-lg font-semibold transition-all duration-300 shadow-2xl shadow-primary/30 hover:shadow-primary/50 hover:scale-105 flex items-center justify-center gap-2"
+              className="group bg-gradient-to-r from-primary to-red-600 hover:from-red-600 hover:to-primary text-white px-10 py-5 rounded-xl text-lg font-semibold transition-all duration-300 shadow-elevation-5 dark:shadow-elevation-5-dark hover:shadow-glow-lg hover:scale-105 flex items-center justify-center gap-2"
             >
               Get Started Free
               <ArrowDown className="w-5 h-5 group-hover:translate-y-1 transition-transform" />
             </Link>
             <Link
               href="/features"
-              className="bg-muted hover:bg-muted/80 backdrop-blur-sm text-foreground px-10 py-5 rounded-xl text-lg font-semibold transition-all duration-300 border border-border hover:border-primary/30 hover:scale-105"
+              className="bg-muted hover:bg-muted/80 backdrop-blur-sm text-foreground px-10 py-5 rounded-xl text-lg font-semibold transition-all duration-300 border border-border hover:border-primary/30 hover:scale-105 shadow-elevation-2 dark:shadow-elevation-2-dark"
             >
               See How It Works
             </Link>
@@ -87,15 +87,15 @@ export function Hero() {
             transition={{ duration: 0.6, delay: 0.4 }}
             className="flex flex-wrap justify-center gap-6 md:gap-10 text-foreground/70"
           >
-            <div className="flex items-center gap-3 bg-muted backdrop-blur-sm px-6 py-3 rounded-full border border-border">
+            <div className="flex items-center gap-3 bg-muted backdrop-blur-sm px-6 py-3 rounded-full border border-border shadow-elevation-2 dark:shadow-elevation-2-dark">
               <Shield className="w-5 h-5 text-green-400" />
               <span className="font-medium">Verified FFLs Only</span>
             </div>
-            <div className="flex items-center gap-3 bg-muted backdrop-blur-sm px-6 py-3 rounded-full border border-border">
+            <div className="flex items-center gap-3 bg-muted backdrop-blur-sm px-6 py-3 rounded-full border border-border shadow-elevation-2 dark:shadow-elevation-2-dark">
               <CheckCircle2 className="w-5 h-5 text-green-400" />
               <span className="font-medium">100% Legal Compliance</span>
             </div>
-            <div className="flex items-center gap-3 bg-muted backdrop-blur-sm px-6 py-3 rounded-full border border-border">
+            <div className="flex items-center gap-3 bg-muted backdrop-blur-sm px-6 py-3 rounded-full border border-border shadow-elevation-2 dark:shadow-elevation-2-dark">
               <FileCheck className="w-5 h-5 text-green-400" />
               <span className="font-medium">Complete Digital Trail</span>
             </div>

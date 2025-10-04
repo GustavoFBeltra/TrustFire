@@ -151,7 +151,7 @@ export function SocialProof() {
                   </div>
                 </div>
                 <AnimatedCounter end={stat.value} suffix={stat.suffix} />
-                <div className="text-gray-400 font-medium mt-2 text-lg">{stat.label}</div>
+                <div className="text-gray-400 font-medium mt-2 text-base">{stat.label}</div>
               </motion.div>
             );
           })}
@@ -163,10 +163,10 @@ export function SocialProof() {
           animate={isVisible ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6, delay: 0.4 }}
         >
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white text-center mb-6">
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white text-center mb-6 tracking-tight">
             Trusted by the <span className="text-gradient">Community</span>
           </h2>
-          <p className="text-xl text-gray-400 text-center mb-16 max-w-2xl mx-auto">
+          <p className="text-xl text-gray-400 text-center mb-16 max-w-2xl mx-auto font-normal">
             See what our users have to say about their experience with TrustFire.
           </p>
 
@@ -177,7 +177,7 @@ export function SocialProof() {
                 initial={{ opacity: 0, y: 30 }}
                 animate={isVisible ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.5, delay: 0.5 + index * 0.1 }}
-                className="group relative bg-gradient-to-br from-background-dark-alt to-black border border-gray-800 rounded-2xl p-8 hover:border-primary/50 transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-primary/10"
+                className="group relative bg-gradient-to-br from-background-dark-alt to-black border border-gray-800 rounded-2xl p-8 hover:border-primary/50 transition-all duration-300 hover:scale-105 shadow-elevation-3 dark:shadow-elevation-3-dark hover:shadow-elevation-5 hover:dark:shadow-elevation-5-dark"
               >
                 {/* Quote icon */}
                 <div className="absolute top-6 right-6 opacity-10">
@@ -191,19 +191,19 @@ export function SocialProof() {
                   ))}
                 </div>
 
-                <p className="text-gray-300 mb-6 leading-relaxed relative z-10 italic">
+                <p className="text-base text-gray-300 mb-6 leading-relaxed relative z-10 italic font-normal">
                   "{testimonial.quote}"
                 </p>
 
                 <div className="flex items-center gap-4 relative z-10">
-                  <div className="w-12 h-12 rounded-full bg-gradient-to-br from-primary to-red-600 flex items-center justify-center text-white font-bold text-lg">
+                  <div className="w-12 h-12 rounded-full bg-gradient-to-br from-primary to-red-600 flex items-center justify-center text-white font-bold text-lg shadow-elevation-2 dark:shadow-elevation-2-dark">
                     {testimonial.author.charAt(0)}
                   </div>
                   <div>
-                    <div className="font-semibold text-white">
+                    <div className="font-semibold text-white tracking-tight">
                       {testimonial.author}
                     </div>
-                    <div className="text-sm text-gray-500">{testimonial.role}</div>
+                    <div className="text-sm text-gray-500 font-normal">{testimonial.role}</div>
                   </div>
                 </div>
 
